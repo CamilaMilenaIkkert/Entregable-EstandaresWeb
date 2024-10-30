@@ -1,0 +1,87 @@
+/* Estilos para la seccion productos */
+.products-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products-header h1 {
+    font-family: "Arima", system-ui;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.product-quantity {
+    width: 60px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-to-cart-btn {
+    font-family: "Roboto Mono", serif;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #981c06;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+    }
+
+    .product-quantity {
+        margin-bottom: 10px;
+    }
+}

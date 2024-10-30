@@ -1,0 +1,92 @@
+/* Estilos para la seccion about */
+.about-container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-subtitle {
+    font-family: "Roboto Mono", serif;
+    display: inline-block;
+    color: #ff6347;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.about-text h1 {
+    font-family: "Arima", system-ui;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+    border-left: 4px solid #ff6347;
+    padding-left: 20px;
+}
+
+.about-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.about-stat {
+    font-family: "Roboto Mono", serif;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 3rem;
+    color: #ff6347;
+}
+
+.stat-label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .about-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-description {
+        padding-left: 0;
+        border-left: none;
+    }
+}
