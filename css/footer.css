@@ -1,0 +1,191 @@
+/* Estilos para la seccion footer */
+.footer-container {
+    width: 100%;
+    background-color: #333;
+    padding: 50px 0;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 5px;
+}
+
+.footer-brand h1 {
+    font-family: "Arima", system-ui;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-right:30rem;
+}
+
+.footer-highlight {
+    color: #ff6347;
+}
+
+.footer-title {
+    font-family: "Arima", system-ui;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #ff6347;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ff6347;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter-button {
+    padding: 15px 30px;
+    background-color: #ff6347;
+    font-family: "Roboto Mono", serif;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background-color: #981c06;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .footer-brand h1 {
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-column {
+        flex: 1;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .newsletter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 30px 0;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .newsletter-button {
+        width: 100%;
+        padding: 10px;
+    }
+}

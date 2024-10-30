@@ -1,0 +1,141 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+.carousel-card {
+    display: none;
+    width: 100%;
+    transition: transform 0.5s ease;
+    text-align: center;
+}
+
+.carousel-card.active {
+    display: block;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.carousel-content {
+    width: 40rem;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    bottom:25rem;
+    left: 30rem;
+}
+
+.carousel-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carousel-subtitle {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.carousel-p{
+    margin-bottom: 2rem;
+}
+
+.carousel-button {
+    font-family: "Roboto Mono", serif;
+    padding: 5px;
+    background-color: #fe300b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8%;
+}
+
+.carousel-button:hover {
+    background-color: #981c06;
+}
+
+.carousel-control {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 150;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Responsividad */
+
+@media (max-width: 1024px) {
+    .carousel-content {
+        width: 30rem;
+        bottom: 20rem;
+        left: 20rem;
+    }
+    
+    .carousel-img {
+        height: 30rem;
+    }
+    
+    .carousel-title {
+        font-size: 20px;
+    }
+    
+    .carousel-subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-content {
+        width: 90%;
+        bottom: 15rem;
+        left: 5%;
+        padding: 15px;
+    }
+    
+    .carousel-img {
+        height: 20rem;
+    }
+    
+    .carousel-title {
+        font-size: 18px;
+    }
+    
+    .carousel-subtitle {
+        font-size: 14px;
+    }
+    
+    .carousel-button {
+        padding: 8px;
+    }
+    
+    .carousel-control {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        top: 35%;
+    }
+}
